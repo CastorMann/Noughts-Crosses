@@ -1,0 +1,579 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://assets/bg.png" type="Texture" id=1]
+[ext_resource path="res://src/POS.tscn" type="PackedScene" id=3]
+[ext_resource path="res://src/POSITIONS.gd" type="Script" id=4]
+[ext_resource path="res://Scripts/global.gd" type="Script" id=5]
+[ext_resource path="res://Scripts/x count.gd" type="Script" id=6]
+[ext_resource path="res://Scripts/o count.gd" type="Script" id=7]
+[ext_resource path="res://Scripts/longest x line.gd" type="Script" id=8]
+[ext_resource path="res://Scripts/longest o line.gd" type="Script" id=9]
+[ext_resource path="res://Scripts/BG.gd" type="Script" id=10]
+[ext_resource path="res://src/O_win.tscn" type="PackedScene" id=11]
+[ext_resource path="res://src/X_win.tscn" type="PackedScene" id=12]
+[ext_resource path="res://assets/grid.png" type="Texture" id=13]
+
+[node name="GameScene" type="Node2D"]
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="BG" type="Sprite" parent="."]
+light_mask = 2
+position = Vector2( 512, 304 )
+z_index = -2
+texture = ExtResource( 1 )
+script = ExtResource( 10 )
+
+[node name="x count" type="Label" parent="BG"]
+margin_left = -484.0
+margin_top = -262.0
+margin_right = -444.0
+margin_bottom = -248.0
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="o count" type="Label" parent="BG"]
+margin_left = -486.0
+margin_top = -215.0
+margin_right = -446.0
+margin_bottom = -201.0
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="longest x line" type="Label" parent="BG"]
+margin_left = -488.0
+margin_top = -172.0
+margin_right = -448.0
+margin_bottom = -158.0
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="longest o line" type="Label" parent="BG"]
+margin_left = -496.0
+margin_top = -128.0
+margin_right = -456.0
+margin_bottom = -114.0
+script = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GRID" type="Node2D" parent="BG"]
+
+[node name="grid" type="Sprite" parent="BG/GRID"]
+position = Vector2( -208, -208 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 13 )
+
+[node name="grid2" type="Sprite" parent="BG/GRID"]
+position = Vector2( -96, -208 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 13 )
+
+[node name="grid3" type="Sprite" parent="BG/GRID"]
+position = Vector2( 16, -208 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 13 )
+
+[node name="grid4" type="Sprite" parent="BG/GRID"]
+position = Vector2( 128, -208 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 13 )
+
+[node name="grid5" type="Sprite" parent="BG/GRID"]
+position = Vector2( 240, -208 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 13 )
+
+[node name="grid6" type="Sprite" parent="BG/GRID"]
+position = Vector2( -208, -104 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 13 )
+
+[node name="grid7" type="Sprite" parent="BG/GRID"]
+position = Vector2( -96, -104 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 13 )
+
+[node name="grid8" type="Sprite" parent="BG/GRID"]
+position = Vector2( 16, -104 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 13 )
+
+[node name="grid9" type="Sprite" parent="BG/GRID"]
+position = Vector2( 128, -104 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 13 )
+
+[node name="grid10" type="Sprite" parent="BG/GRID"]
+position = Vector2( 240, -104 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 13 )
+
+[node name="grid11" type="Sprite" parent="BG/GRID"]
+position = Vector2( -208, 0 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 13 )
+
+[node name="grid12" type="Sprite" parent="BG/GRID"]
+position = Vector2( -96, 3.05176e-05 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 13 )
+
+[node name="grid13" type="Sprite" parent="BG/GRID"]
+position = Vector2( 16, 0 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 13 )
+
+[node name="grid14" type="Sprite" parent="BG/GRID"]
+position = Vector2( 72.0001, 3.05176e-05 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 13 )
+
+[node name="grid15" type="Sprite" parent="BG/GRID"]
+position = Vector2( 184, 0 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 13 )
+
+[node name="grid16" type="Sprite" parent="BG/GRID"]
+position = Vector2( 240, 3.05176e-05 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 13 )
+
+[node name="grid17" type="Sprite" parent="BG/GRID"]
+position = Vector2( -208, 104 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 13 )
+
+[node name="grid18" type="Sprite" parent="BG/GRID"]
+position = Vector2( -96, 104 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 13 )
+
+[node name="grid19" type="Sprite" parent="BG/GRID"]
+position = Vector2( 16, 104 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 13 )
+
+[node name="grid20" type="Sprite" parent="BG/GRID"]
+position = Vector2( 128, 104 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 13 )
+
+[node name="grid21" type="Sprite" parent="BG/GRID"]
+position = Vector2( 240, 104 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 13 )
+
+[node name="grid22" type="Sprite" parent="BG/GRID"]
+position = Vector2( -208, 208 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 13 )
+
+[node name="grid23" type="Sprite" parent="BG/GRID"]
+position = Vector2( -96, 208 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 13 )
+
+[node name="grid24" type="Sprite" parent="BG/GRID"]
+position = Vector2( 16, 208 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 13 )
+
+[node name="grid25" type="Sprite" parent="BG/GRID"]
+position = Vector2( 128, 208 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 13 )
+
+[node name="grid26" type="Sprite" parent="BG/GRID"]
+position = Vector2( 240, 208 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 13 )
+
+[node name="POSITIONS" type="Node" parent="BG"]
+script = ExtResource( 4 )
+
+[node name="POS1" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 804, 42 )
+
+[node name="POS2" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 748, 42 )
+
+[node name="POS3" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 691, 44 )
+
+[node name="POS4" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 635, 43 )
+
+[node name="POS5" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 581, 43 )
+
+[node name="POS6" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 524, 42 )
+
+[node name="POS7" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 467, 42 )
+
+[node name="POS8" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 412, 43 )
+
+[node name="POS9" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 355, 43 )
+
+[node name="POS10" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 301, 43 )
+
+[node name="POS11" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 244, 45 )
+
+[node name="POS12" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 804, 97 )
+
+[node name="POS13" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 748, 97 )
+
+[node name="POS14" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 693, 98 )
+
+[node name="POS15" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 637, 97 )
+
+[node name="POS16" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 580, 97 )
+
+[node name="POS17" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 523, 97 )
+
+[node name="POS18" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 468, 96 )
+
+[node name="POS19" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 412, 96 )
+
+[node name="POS20" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 356, 97 )
+
+[node name="POS21" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 302, 96 )
+
+[node name="POS22" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 240, 96 )
+
+[node name="POS23" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 804, 145 )
+
+[node name="POS24" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 748, 145 )
+
+[node name="POS25" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 693, 146 )
+
+[node name="POS26" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 637, 145 )
+
+[node name="POS27" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 580, 145 )
+
+[node name="POS28" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 523, 145 )
+
+[node name="POS29" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 468, 144 )
+
+[node name="POS30" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 412, 144 )
+
+[node name="POS31" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 356, 145 )
+
+[node name="POS32" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 302, 144 )
+
+[node name="POS33" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 243, 148 )
+
+[node name="POS34" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 804, 201 )
+
+[node name="POS35" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 748, 201 )
+
+[node name="POS36" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 693, 202 )
+
+[node name="POS37" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 637, 201 )
+
+[node name="POS38" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 580, 201 )
+
+[node name="POS39" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 523, 201 )
+
+[node name="POS40" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 468, 200 )
+
+[node name="POS41" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 412, 200 )
+
+[node name="POS42" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 356, 201 )
+
+[node name="POS43" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 302, 200 )
+
+[node name="POS44" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 245, 200 )
+
+[node name="POS45" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 804, 249 )
+
+[node name="POS46" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 748, 249 )
+
+[node name="POS47" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 693, 250 )
+
+[node name="POS48" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 637, 249 )
+
+[node name="POS49" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 580, 249 )
+
+[node name="POS50" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 523, 249 )
+
+[node name="POS51" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 468, 248 )
+
+[node name="POS52" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 412, 248 )
+
+[node name="POS53" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 356, 249 )
+
+[node name="POS54" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 302, 248 )
+
+[node name="POS55" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 243, 253 )
+
+[node name="POS56" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 804, 305 )
+
+[node name="POS57" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 748, 305 )
+
+[node name="POS58" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 693, 306 )
+
+[node name="POS59" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 637, 305 )
+
+[node name="POS60" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 580, 305 )
+
+[node name="POS61" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 523, 305 )
+
+[node name="POS62" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 468, 304 )
+
+[node name="POS63" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 412, 304 )
+
+[node name="POS64" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 356, 305 )
+
+[node name="POS65" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 302, 304 )
+
+[node name="POS66" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 240, 304 )
+
+[node name="POS67" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 804, 353 )
+
+[node name="POS68" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 748, 353 )
+
+[node name="POS69" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 693, 354 )
+
+[node name="POS70" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 637, 353 )
+
+[node name="POS71" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 583, 355 )
+
+[node name="POS72" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 523, 353 )
+
+[node name="POS73" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 468, 352 )
+
+[node name="POS74" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 412, 352 )
+
+[node name="POS75" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 356, 353 )
+
+[node name="POS76" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 302, 352 )
+
+[node name="POS77" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 243, 356 )
+
+[node name="POS78" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 804, 409 )
+
+[node name="POS79" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 748, 409 )
+
+[node name="POS80" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 693, 410 )
+
+[node name="POS81" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 637, 409 )
+
+[node name="POS82" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 580, 409 )
+
+[node name="POS83" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 523, 409 )
+
+[node name="POS84" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 468, 408 )
+
+[node name="POS85" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 412, 408 )
+
+[node name="POS86" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 356, 409 )
+
+[node name="POS87" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 302, 408 )
+
+[node name="POS88" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 240, 408 )
+
+[node name="POS89" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 804, 457 )
+
+[node name="POS90" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 748, 457 )
+
+[node name="POS91" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 693, 458 )
+
+[node name="POS92" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 637, 457 )
+
+[node name="POS93" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 580, 457 )
+
+[node name="POS94" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 523, 457 )
+
+[node name="POS95" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 468, 456 )
+
+[node name="POS96" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 412, 456 )
+
+[node name="POS97" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 356, 457 )
+
+[node name="POS98" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 302, 456 )
+
+[node name="POS99" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 241, 460 )
+
+[node name="POS100" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 804, 513 )
+
+[node name="POS101" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 748, 513 )
+
+[node name="POS102" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 693, 514 )
+
+[node name="POS103" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 637, 513 )
+
+[node name="POS104" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 580, 513 )
+
+[node name="POS105" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 523, 513 )
+
+[node name="POS106" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 468, 512 )
+
+[node name="POS107" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 412, 512 )
+
+[node name="POS108" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 356, 513 )
+
+[node name="POS109" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 302, 512 )
+
+[node name="POS110" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 240, 512 )
+
+[node name="POS111" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 804, 561 )
+
+[node name="POS112" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 748, 561 )
+
+[node name="POS113" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 693, 562 )
+
+[node name="POS114" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 637, 561 )
+
+[node name="POS115" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 580, 561 )
+
+[node name="POS116" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 523, 561 )
+
+[node name="POS117" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 468, 560 )
+
+[node name="POS118" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 411, 564 )
+
+[node name="POS119" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 356, 561 )
+
+[node name="POS120" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 299, 563 )
+
+[node name="POS121" parent="BG/POSITIONS" instance=ExtResource( 3 )]
+position = Vector2( 246, 563 )
+
+[node name="O WINS" parent="." instance=ExtResource( 11 )]
+visible = false
+margin_left = 256.0
+margin_top = 150.0
+margin_right = 771.0
+margin_bottom = 455.0
+
+[node name="X WIN" parent="." instance=ExtResource( 12 )]
+visible = false
+margin_left = 256.0
+margin_top = 150.0
+margin_right = 771.0
+margin_bottom = 452.0
