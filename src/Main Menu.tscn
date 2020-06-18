@@ -46,4 +46,15 @@ custom_colors/font_color = Color( 0.6, 0.6, 0.6, 1 )
 custom_colors/font_color_hover = Color( 0.533333, 0.533333, 0.533333, 1 )
 custom_colors/font_color_pressed = Color( 0.4, 0.4, 0.4, 1 )
 text = "New Game"
+
+[node name="Online" type="Button" parent="Menu"]
+margin_top = 197.0
+margin_right = 917.0
+margin_bottom = 263.0
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0.6, 0.6, 0.6, 1 )
+custom_colors/font_color_hover = Color( 0.533333, 0.533333, 0.533333, 1 )
+custom_colors/font_color_pressed = Color( 0.4, 0.4, 0.4, 1 )
+text = "ONLINE"
 [connection signal="pressed" from="Menu/New Game" to="." method="_on_New_Game_pressed"]
+[connection signal="pressed" from="Menu/Online" to="." method="_on_Online_pressed"]

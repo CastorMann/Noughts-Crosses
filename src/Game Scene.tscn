@@ -1,6 +1,7 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://assets/bg.png" type="Texture" id=1]
+[ext_resource path="res://assets/O_win.tres" type="DynamicFont" id=2]
 [ext_resource path="res://src/POS.tscn" type="PackedScene" id=3]
 [ext_resource path="res://src/POSITIONS.gd" type="Script" id=4]
 [ext_resource path="res://Scripts/global.gd" type="Script" id=5]
@@ -564,6 +565,20 @@ position = Vector2( 299, 563 )
 [node name="POS121" parent="BG/POSITIONS" instance=ExtResource( 3 )]
 position = Vector2( 246, 563 )
 
+[node name="Main Menu" type="Button" parent="BG"]
+margin_left = -478.0
+margin_top = 220.0
+margin_right = -320.0
+margin_bottom = 286.0
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0.6, 0.6, 0.6, 1 )
+custom_colors/font_color_hover = Color( 0.533333, 0.533333, 0.533333, 1 )
+custom_colors/font_color_pressed = Color( 0.4, 0.4, 0.4, 1 )
+text = "EXIT"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="O WINS" parent="." instance=ExtResource( 11 )]
 visible = false
 margin_left = 256.0
@@ -577,3 +592,4 @@ margin_left = 256.0
 margin_top = 150.0
 margin_right = 771.0
 margin_bottom = 452.0
+[connection signal="pressed" from="BG/Main Menu" to="." method="_on_Main_Menu_pressed"]

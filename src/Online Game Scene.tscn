@@ -1,0 +1,510 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://assets/bg.png" type="Texture" id=1]
+[ext_resource path="res://assets/grid.png" type="Texture" id=2]
+[ext_resource path="res://src/Online Pos.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scripts/Online Game Scene.gd" type="Script" id=4]
+
+[node name="Online Game Root" type="Node2D"]
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="bg" type="Sprite" parent="."]
+position = Vector2( 512, 300 )
+z_index = -5
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="grid" type="Sprite" parent="bg"]
+position = Vector2( -232, -207.6 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 2 )
+
+[node name="grid2" type="Sprite" parent="bg"]
+position = Vector2( -120, -207.6 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 2 )
+
+[node name="grid3" type="Sprite" parent="bg"]
+position = Vector2( -8, -207.6 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 2 )
+
+[node name="grid4" type="Sprite" parent="bg"]
+position = Vector2( 104, -207.6 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 2 )
+
+[node name="grid5" type="Sprite" parent="bg"]
+position = Vector2( 216, -207.6 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 2 )
+
+[node name="grid10" type="Sprite" parent="bg"]
+position = Vector2( -233.6, -105.2 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 2 )
+
+[node name="grid9" type="Sprite" parent="bg"]
+position = Vector2( -121.6, -105.2 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 2 )
+
+[node name="grid8" type="Sprite" parent="bg"]
+position = Vector2( -9.59998, -105.2 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 2 )
+
+[node name="grid7" type="Sprite" parent="bg"]
+position = Vector2( 102.4, -105.2 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 2 )
+
+[node name="grid6" type="Sprite" parent="bg"]
+position = Vector2( 214.4, -105.2 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 2 )
+
+[node name="grid15" type="Sprite" parent="bg"]
+position = Vector2( -233.6, -1.19995 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 2 )
+
+[node name="grid14" type="Sprite" parent="bg"]
+position = Vector2( -121.6, -1.19995 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 2 )
+
+[node name="grid13" type="Sprite" parent="bg"]
+position = Vector2( -9.59998, -1.19995 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 2 )
+
+[node name="grid12" type="Sprite" parent="bg"]
+position = Vector2( 102.4, -1.19995 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 2 )
+
+[node name="grid11" type="Sprite" parent="bg"]
+position = Vector2( 214.4, -1.19995 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 2 )
+
+[node name="grid20" type="Sprite" parent="bg"]
+position = Vector2( -233.6, 102.8 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 2 )
+
+[node name="grid19" type="Sprite" parent="bg"]
+position = Vector2( -121.6, 102.8 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 2 )
+
+[node name="grid18" type="Sprite" parent="bg"]
+position = Vector2( -9.59998, 102.8 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 2 )
+
+[node name="grid17" type="Sprite" parent="bg"]
+position = Vector2( 102.4, 102.8 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 2 )
+
+[node name="grid16" type="Sprite" parent="bg"]
+position = Vector2( 214.4, 102.8 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 2 )
+
+[node name="grid25" type="Sprite" parent="bg"]
+position = Vector2( -233.6, 206.8 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 2 )
+
+[node name="grid24" type="Sprite" parent="bg"]
+position = Vector2( -121.6, 206.8 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 2 )
+
+[node name="grid23" type="Sprite" parent="bg"]
+position = Vector2( -9.59998, 206.8 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 2 )
+
+[node name="grid22" type="Sprite" parent="bg"]
+position = Vector2( 102.4, 206.8 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 2 )
+
+[node name="grid21" type="Sprite" parent="bg"]
+position = Vector2( 214.4, 206.8 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 2 )
+
+[node name="OPOS" type="Node" parent="."]
+
+[node name="Online Pos" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 223, 40 )
+
+[node name="Online Pos2" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 279, 40 )
+
+[node name="Online Pos3" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 335, 40 )
+
+[node name="Online Pos4" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 391, 40 )
+
+[node name="Online Pos5" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 447, 40 )
+
+[node name="Online Pos6" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 503, 42 )
+
+[node name="Online Pos7" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 559, 41 )
+
+[node name="Online Pos8" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 615, 41 )
+
+[node name="Online Pos9" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 671, 42 )
+
+[node name="Online Pos10" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 726, 42 )
+
+[node name="Online Pos11" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 782, 42 )
+
+[node name="Online Pos22" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 223, 92 )
+
+[node name="Online Pos21" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 279, 92 )
+
+[node name="Online Pos20" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 335, 92 )
+
+[node name="Online Pos19" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 391, 92 )
+
+[node name="Online Pos18" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 447, 92 )
+
+[node name="Online Pos17" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 503, 94 )
+
+[node name="Online Pos16" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 559, 93 )
+
+[node name="Online Pos15" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 615, 93 )
+
+[node name="Online Pos14" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 671, 94 )
+
+[node name="Online Pos13" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 726, 94 )
+
+[node name="Online Pos12" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 782, 94 )
+
+[node name="Online Pos33" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 222, 144 )
+
+[node name="Online Pos32" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 278, 144 )
+
+[node name="Online Pos31" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 334, 144 )
+
+[node name="Online Pos30" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 390, 144 )
+
+[node name="Online Pos29" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 446, 144 )
+
+[node name="Online Pos28" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 502, 146 )
+
+[node name="Online Pos27" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 558, 145 )
+
+[node name="Online Pos26" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 614, 145 )
+
+[node name="Online Pos25" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 670, 146 )
+
+[node name="Online Pos24" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 725, 146 )
+
+[node name="Online Pos23" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 781, 146 )
+
+[node name="Online Pos44" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 222, 193 )
+
+[node name="Online Pos43" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 278, 193 )
+
+[node name="Online Pos42" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 334, 193 )
+
+[node name="Online Pos41" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 390, 193 )
+
+[node name="Online Pos40" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 446, 193 )
+
+[node name="Online Pos39" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 502, 195 )
+
+[node name="Online Pos38" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 558, 194 )
+
+[node name="Online Pos37" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 614, 194 )
+
+[node name="Online Pos36" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 670, 195 )
+
+[node name="Online Pos35" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 725, 195 )
+
+[node name="Online Pos34" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 781, 195 )
+
+[node name="Online Pos55" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 221, 245 )
+
+[node name="Online Pos54" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 277, 245 )
+
+[node name="Online Pos53" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 333, 245 )
+
+[node name="Online Pos52" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 389, 245 )
+
+[node name="Online Pos51" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 445, 245 )
+
+[node name="Online Pos50" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 501, 247 )
+
+[node name="Online Pos49" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 557, 246 )
+
+[node name="Online Pos48" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 613, 246 )
+
+[node name="Online Pos47" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 669, 247 )
+
+[node name="Online Pos46" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 724, 247 )
+
+[node name="Online Pos45" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 780, 247 )
+
+[node name="Online Pos66" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 222, 298 )
+
+[node name="Online Pos65" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 278, 298 )
+
+[node name="Online Pos64" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 334, 298 )
+
+[node name="Online Pos63" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 390, 298 )
+
+[node name="Online Pos62" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 446, 298 )
+
+[node name="Online Pos61" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 502, 300 )
+
+[node name="Online Pos60" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 558, 299 )
+
+[node name="Online Pos59" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 614, 299 )
+
+[node name="Online Pos58" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 670, 300 )
+
+[node name="Online Pos57" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 725, 300 )
+
+[node name="Online Pos56" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 781, 300 )
+
+[node name="Online Pos77" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 223, 347 )
+
+[node name="Online Pos76" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 279, 347 )
+
+[node name="Online Pos75" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 335, 347 )
+
+[node name="Online Pos74" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 391, 347 )
+
+[node name="Online Pos73" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 447, 347 )
+
+[node name="Online Pos72" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 503, 349 )
+
+[node name="Online Pos71" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 559, 348 )
+
+[node name="Online Pos70" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 615, 348 )
+
+[node name="Online Pos69" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 671, 349 )
+
+[node name="Online Pos68" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 726, 349 )
+
+[node name="Online Pos67" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 782, 349 )
+
+[node name="Online Pos88" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 221, 400 )
+
+[node name="Online Pos87" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 277, 400 )
+
+[node name="Online Pos86" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 333, 400 )
+
+[node name="Online Pos85" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 389, 400 )
+
+[node name="Online Pos84" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 445, 400 )
+
+[node name="Online Pos83" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 501, 402 )
+
+[node name="Online Pos82" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 557, 401 )
+
+[node name="Online Pos81" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 613, 401 )
+
+[node name="Online Pos80" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 669, 402 )
+
+[node name="Online Pos79" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 724, 402 )
+
+[node name="Online Pos78" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 780, 402 )
+
+[node name="Online Pos99" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 220, 452 )
+
+[node name="Online Pos98" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 276, 452 )
+
+[node name="Online Pos97" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 332, 452 )
+
+[node name="Online Pos96" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 388, 452 )
+
+[node name="Online Pos95" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 444, 452 )
+
+[node name="Online Pos94" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 500, 454 )
+
+[node name="Online Pos93" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 556, 453 )
+
+[node name="Online Pos92" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 612, 453 )
+
+[node name="Online Pos91" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 668, 454 )
+
+[node name="Online Pos90" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 723, 454 )
+
+[node name="Online Pos89" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 779, 454 )
+
+[node name="Online Pos110" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 222, 506 )
+
+[node name="Online Pos109" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 278, 506 )
+
+[node name="Online Pos108" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 334, 506 )
+
+[node name="Online Pos107" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 390, 506 )
+
+[node name="Online Pos106" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 446, 506 )
+
+[node name="Online Pos105" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 502, 508 )
+
+[node name="Online Pos104" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 558, 507 )
+
+[node name="Online Pos103" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 614, 507 )
+
+[node name="Online Pos102" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 670, 508 )
+
+[node name="Online Pos101" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 725, 508 )
+
+[node name="Online Pos100" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 781, 508 )
+
+[node name="Online Pos121" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 221, 556 )
+
+[node name="Online Pos120" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 277, 556 )
+
+[node name="Online Pos119" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 333, 556 )
+
+[node name="Online Pos118" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 389, 556 )
+
+[node name="Online Pos117" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 445, 556 )
+
+[node name="Online Pos116" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 501, 558 )
+
+[node name="Online Pos115" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 557, 557 )
+
+[node name="Online Pos114" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 613, 557 )
+
+[node name="Online Pos113" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 669, 558 )
+
+[node name="Online Pos112" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 724, 558 )
+
+[node name="Online Pos111" parent="OPOS" instance=ExtResource( 3 )]
+position = Vector2( 780, 558 )

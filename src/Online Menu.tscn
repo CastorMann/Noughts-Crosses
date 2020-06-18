@@ -1,0 +1,71 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/O_win.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Scripts/Online Menu.gd" type="Script" id=2]
+
+[node name="Online Menu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Menu" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -460.8
+margin_top = -270.0
+margin_right = 460.8
+margin_bottom = 270.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Menu"]
+margin_right = 921.0
+margin_bottom = 123.0
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0.968627, 0.572549, 0.0117647, 1 )
+custom_colors/font_color_shadow = Color( 0.447059, 0.337255, 0.00784314, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 4
+text = "Welcome to 
+Nougths & Crosses Online"
+align = 1
+valign = 1
+
+[node name="Host Game" type="Button" parent="Menu"]
+margin_top = 127.0
+margin_right = 921.0
+margin_bottom = 193.0
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0.6, 0.6, 0.6, 1 )
+custom_colors/font_color_hover = Color( 0.533333, 0.533333, 0.533333, 1 )
+custom_colors/font_color_pressed = Color( 0.4, 0.4, 0.4, 1 )
+text = "Host Game"
+
+[node name="Join Game" type="Button" parent="Menu"]
+margin_top = 197.0
+margin_right = 921.0
+margin_bottom = 263.0
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0.6, 0.6, 0.6, 1 )
+custom_colors/font_color_hover = Color( 0.533333, 0.533333, 0.533333, 1 )
+custom_colors/font_color_pressed = Color( 0.4, 0.4, 0.4, 1 )
+text = "Join Game"
+
+[node name="Main Menu" type="Button" parent="Menu"]
+margin_top = 267.0
+margin_right = 921.0
+margin_bottom = 333.0
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0.6, 0.6, 0.6, 1 )
+custom_colors/font_color_hover = Color( 0.533333, 0.533333, 0.533333, 1 )
+custom_colors/font_color_pressed = Color( 0.4, 0.4, 0.4, 1 )
+text = "Main Menu"
+[connection signal="pressed" from="Menu/Host Game" to="." method="_on_Host_Game_pressed"]
+[connection signal="pressed" from="Menu/Join Game" to="." method="_on_Join_Game_pressed"]
+[connection signal="pressed" from="Menu/Main Menu" to="." method="_on_Main_Menu_pressed"]
