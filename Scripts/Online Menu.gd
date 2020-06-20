@@ -21,7 +21,7 @@ func _on_Main_Menu_pressed() -> void:
 func _on_Host_Game_pressed() -> void:
 	print("Hosting new game")
 	var host = NetworkedMultiplayerENet.new()
-	var res = host.create_server(1000, 2)
+	var res = host.create_server(4242, 2)
 	if res != OK:
 		print("Error creating server")
 		return
@@ -34,6 +34,6 @@ func _on_Host_Game_pressed() -> void:
 func _on_Join_Game_pressed() -> void:
 	print("Joining game")
 	var host = NetworkedMultiplayerENet.new()
-	host.create_client("127.0.0.1", 1000)
+	host.create_client($IP.text, 4242)
 	get_tree().set_network_peer(host)
 	
