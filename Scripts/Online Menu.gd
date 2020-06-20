@@ -25,6 +25,8 @@ func _on_Host_Game_pressed() -> void:
 	if res != OK:
 		print("Error creating server")
 		return
+	$Menu.hide()
+	$"Loading Scene".show()
 	get_tree().set_network_peer(host)
 	
 

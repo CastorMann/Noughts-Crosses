@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://assets/O_win.tres" type="DynamicFont" id=1]
 [ext_resource path="res://Scripts/Online Menu.gd" type="Script" id=2]
+[ext_resource path="res://src/Loading Scene.tscn" type="PackedScene" id=3]
 
 [node name="Online Menu" type="Control"]
 anchor_right = 1.0
@@ -66,6 +67,15 @@ custom_colors/font_color = Color( 0.6, 0.6, 0.6, 1 )
 custom_colors/font_color_hover = Color( 0.533333, 0.533333, 0.533333, 1 )
 custom_colors/font_color_pressed = Color( 0.4, 0.4, 0.4, 1 )
 text = "Main Menu"
+
+[node name="Loading Scene" parent="." instance=ExtResource( 3 )]
+visible = false
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 72.0
+margin_top = 292.0
+margin_right = 993.0
+margin_bottom = 292.0
 [connection signal="pressed" from="Menu/Host Game" to="." method="_on_Host_Game_pressed"]
 [connection signal="pressed" from="Menu/Join Game" to="." method="_on_Join_Game_pressed"]
 [connection signal="pressed" from="Menu/Main Menu" to="." method="_on_Main_Menu_pressed"]
